@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Royal Fitness Point</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+
+    style
+        include ../static/css/contact.css
+</head>
+<body>
+    <img id="backgroundImg" src="../static/img/bg_contact.jpg" alt="Background Img">
+    <div class="navbar2">
+        <ul>
+            
+            <li class="nav2li"><a href="/">Home</a></li>
+            <li class="nav2li"><a href="/about">About</a></li>
+            <li class="nav2li"><a href="/pricing">Pricing</a></li>
+            <li class="nav2li"><a href="/trainers">Trainers</a></li>
+            <li class="nav2li"><a href="/contact">Contact Us</a></li>
+        </ul>
+    </div>
+    <div class="navbar">
+        <nav>
+            <div class="logo">
+                <a href="/" id="logoImg"><img src="../static/img/logo.jpg" alt="Royal Fitness Point"></a>
+                <a id="logoText" href="/">Royal fitness point</a>
+            </div>
+            <ul>
+                <li class="listItems"><a href="/">Home</a></li>
+                <li class="listItems"><a href="/about">About</a></li>
+                <li class="listItems"><a href="/pricing">Pricing</a></li>
+                <li class="listItems"><a href="/trainers">Trainers</a></li>
+                <li class="listItems"><a href="/contact">Contact Us</a></li>
+                <i class="fa-solid fa-2x fa-bars" id="hamburger"></i>
+            </ul>
+        </nav>
+    </div>
+    <h1>Contact Us</h1>
+    <div class="contactForm">
+        <h2>Fill the Form</h2>
+        <form action="/contact" method="post">
+            <div class="firstName">
+                <label for="firstName">First Name: </label>
+                <input type="text" name="firstName" id="firstName" placeholder="Enter Your First Name" required>
+            </div>
+            <div class="lastName">
+                <label for="lastName">Last Name: </label>
+                <input type="text" name="lastName" id="lastName" placeholder="Enter Your Last Name" required>
+            </div>
+            <div class="age">
+                <label for="age">Age: </label>
+                <input type="number" name="age" id="age">
+            </div>
+            <div class="gender">
+                <label for="male">Male: </label>
+                <input type="radio" name="gender" id="male">
+                <label for="female">Female: </label>
+                <input type="radio" name="gender" id="female">
+                <label for="other">Other: </label>
+                <input type="radio" name="gender" id="other">
+            </div>
+            <div class="emailId">
+                <label for="email">Email Id: </label>
+                <input type="email" name="email" id="email" placeholder="someone@example.com" required>
+            </div>
+            <div class="phone">
+                <label for="phone">Phone No. : </label>
+                <input type="number" name="phone" id="phone" placeholder="Enter Your Phone no." required>
+            </div>
+            <div class="add">
+                <label for="add">Address: </label>
+                <br>
+                <textarea name="add" id="add" cols="30" rows="10" placeholder="Enter Your Full Address" required></textarea>
+            </div>
+            <div class="submit">
+                <input id="submit" type="submit" value="Submit">
+            </div>
+
+        </form>
+        <br>
+        <h3>Your Information will be kept confidential with the Gym owner only</h3>
+    </div>
+
+    <div class="trainersContact">
+        <div class="trainer1">trainer1</div>
+        <div class="trainer2">trainer2</div>
+        <div class="trainer3">trainer2</div>
+        <div class="trainer4">trainer2</div>
+    </div>
+
+    
+<script src="../static/script/contact.js"></script>
+<script src="https://kit.fontawesome.com/a5afcc447e.js" crossorigin="anonymous"></script>
+</html>
