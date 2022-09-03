@@ -5,10 +5,10 @@ let hamburgerIcon = document.getElementById('hamburger');
 // console.log(hamburgerIcon); 
 
 hamburgerIcon.addEventListener('click', ()=> {
-    if(navbar2.style.right == '-40vw'){
-        navbar2.style.right = '0'; 
+    if(navbar2.style.top == '-50vh'){
+        navbar2.style.top = '12vh'; 
     }
     else{
-        navbar2.style.right = '-40vw'; 
+        navbar2.style.top = '-50vh'; 
     }
 })

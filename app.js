@@ -51,7 +51,22 @@ app.get('/pricing', (req, res)=> {
     const paramsPricing = {}; 
     res.status(200).render('pricing.pug', paramsPricing); 
 })
-
+app.get('/trainer1', (req, res) => {
+    const paramsTrainer1 = {}; 
+    res.status(200).render('trainer1.pug', paramsTrainer1)
+})
+app.get('/trainer2', (req, res) => {
+    const paramsTrainer2 = {}; 
+    res.status(200).render('trainer2.pug', paramsTrainer2)
+})
+app.get('/trainer3', (req, res) => {
+    const paramsTrainer3 = {}; 
+    res.status(200).render('trainer3.pug', paramsTrainer3)
+})
+app.get('/trainer4', (req, res) => {
+    const paramsTrainer4 = {}; 
+    res.status(200).render('trainer4.pug', paramsTrainer4)
+})
 app.get('/trainers',(req, res)=> {
     const paramsTrainers = {}; 
     res.status(200).render('trainers.pug', paramsTrainers); 
